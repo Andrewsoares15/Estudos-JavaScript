@@ -12,5 +12,5 @@ estado: 'Rio de Janeiro'
 } </br>
 const {nome, sobrenome, ...resto} = eu </br>
 console.log(nome, sobrenome) // Andrew Soares </br>
-console.log(resto) // {idade: 18, localizacao: {nacao: 'Brasil', cidade: 'Rio de Janeiro'}
+console.log(eu.nome) // Andrew </br>
 ```
