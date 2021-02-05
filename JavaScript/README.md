@@ -1,7 +1,7 @@
 ### Objetos:
 
 ```diff
-# const eu = { </br>
+const eu = { </br>
 nome: 'Andrew', </br>
 sobrenome: 'Soares', </br>
 idade: 18, </br>
