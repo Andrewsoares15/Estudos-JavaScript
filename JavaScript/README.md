@@ -1,3 +1,19 @@
+## Operador rest(...rest)
+
+/hr
+<p> Usado para atribuir o restante do objeto/array para variável </p>
+
+### Array:
+
+```diff
+const numeros = [1, 2, 3, 4, 5];
+const [a, b, ...c] = numeros;
+
+console.log(a) //1
+console.log(b) //2
+console.log(c) //[3, 4, 5]
+```
+
 ### Objetos:
 
 ```diff
