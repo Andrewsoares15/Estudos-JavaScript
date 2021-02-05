@@ -15,6 +15,7 @@ areaQuadrado(2) // 4
 ### CallBack
 
 <p> geralmente são funções que ocorrem após algum evento. </p>
+
 ```diff
 addEventListener('click', function() {
   console.log('Clicou');
