@@ -1,6 +1,7 @@
 ### Objetos:
 
-const eu = { </br>
+```diff
+# const eu = { </br>
 nome: 'Andrew', </br>
 sobrenome: 'Soares', </br>
 idade: 18, </br>
@@ -11,4 +12,5 @@ estado: 'Rio de Janeiro'
 } </br>
 const {nome, sobrenome, ...resto} = eu </br>
 console.log(nome, sobrenome) // Andrew Soares </br>
-console.log(resto) // {idade: 18, localizacao: {nacao: 'Brasil', cidade: 'Rio de Janeiro'}
+console.log(resto) // {idade: 18, localizacao: {nacao: 'Brasil', cidade: 'Rio de Janeiro'} 
+```
