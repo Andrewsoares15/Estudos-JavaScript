@@ -1,4 +1,4 @@
-### HTMLCOLLECTION VS NODELIST
+## HTMLCOLLECTION VS NODELIST
 
 <p>A diferença está nos métodos e propriedades de ambas. Além disso a NodeList retornada com querySelectorAll é estática. </p>
 
@@ -13,7 +13,7 @@ console.log(gridSectionHTML); // 4 itens // HTMLCOLLECTION não é estática com
 console.log(gridSectionNode); // 3 itens
 ```
 
-## Array Like
+### Array Like
 
 <p>HTMLCollection e NodeList são array-like, parecem uma array mas não são. O método de Array forEach() por exemplo, existe apenas em NodeList.</p>
 
