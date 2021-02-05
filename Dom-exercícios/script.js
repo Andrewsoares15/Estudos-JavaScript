@@ -17,3 +17,27 @@ console.log(p)
 // Selecione o último p do site
 const lastP = document.querySelectorAll('p')
 console.log(lastP[--lastP.length])
+
+// Mostre no console cada parágrado do site
+const ps = document.querySelectorAll('p');
+ps.forEach((item)=>{
+    console.log(item)
+})
+// Mostre o texto dos parágrafos no console
+ps.forEach((item) =>{
+    console.log(item.innerText)
+})
+// Como corrigir os erros abaixo:
+const imgss = document.querySelectorAll('img');
+
+imgss.forEach((item, index) => {
+  console.log(item, index);
+});
+
+let i = 0;
+imgss.forEach(() => {
+  console.log(i++);
+});
+
+imgss.forEach(() => i++);
+
