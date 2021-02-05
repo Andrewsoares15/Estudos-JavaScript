@@ -25,13 +25,70 @@ addEventListener('click', function() {
 // Segundo é uma função anônima
 ```
 
+## Objetos
+
+<p> Conjunto de variáveis e funções, que são chamadas de propriedades e métodos.</p>
+```diff
+var pessoa = {
+  nome: 'Andrew',
+  idade: 18,
+  profissao: 'Front End',
+  possuiFaculdade: true,
+}
+
+pessoa.nome; // 'Andrew'
+pessoa.possuiFaculdade; // true
+
+````
+### Palavra chave this
+
+<p> this irá fazer uma referência ao próprio objeto.</p>
+
+```diff
+var height = 120;
+var menu = {
+  width: 800,
+  height: 50,
+  metadeHeight() {
+    return this.height / 2;
+  }
+}
+
+menu.metadeHeight(); // 25
+// sem o this, seria 60
+
+````
+
+### Métodos
+
+<p>É uma propriedade que possui uma função no local do seu valor. </p>
+
+##
+
+```diff
+var quadrado = {
+  lados: 4,
+  area: function(lado) {
+    return lado * lado;
+  },
+  perimetro: function(lado) {
+    return this.lados * lado;
+  },
+}
+
+quadrado.lados; // 4
+quadrado.area(5); // 25
+quadrado.perimetro(5); // 20
+
+```
+
 ## OPERADORES LÓGICOS && e OPERADORES LÓGICOS ||
 
 ### &&
 
 <p> Se ambos os valores forem true ele irá retornar o último valor verificado
     Se algum valor for false ele irá retornar o mesmo e não irá continuar a verificar os próximos </p>
-    
+
 ```diff
 true && true; // true
 true && false; // false
@@ -39,6 +96,7 @@ true && false; // false
 (5 - 5) && (5 + 5); // 0
 'Gato' && false; // false
 ```
+
 ### ||
 
 <p>Retorna o primeiro valor true que encontrar</p>
@@ -80,5 +138,5 @@ estado: 'Rio de Janeiro'
 }
 const {nome, sobrenome, ...resto} = eu
 console.log(nome, sobrenome) // Andrew Soares
-console.log(eu.nome) // Andrew
+console.log(resto) // idade: 18 localizacao{nacao: Brasil, estado: Rio de Janeiro }
 ```
