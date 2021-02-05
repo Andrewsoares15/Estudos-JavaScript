@@ -28,6 +28,7 @@ addEventListener('click', function() {
 ## Objetos
 
 <p> Conjunto de variáveis e funções, que são chamadas de propriedades e métodos.</p>
+
 ```diff
 var pessoa = {
   nome: 'Andrew',
@@ -38,8 +39,8 @@ var pessoa = {
 
 pessoa.nome; // 'Andrew'
 pessoa.possuiFaculdade; // true
+```
 
-````
 ### Palavra chave this
 
 <p> this irá fazer uma referência ao próprio objeto.</p>
@@ -57,7 +58,7 @@ var menu = {
 menu.metadeHeight(); // 25
 // sem o this, seria 60
 
-````
+```
 
 ### Métodos
 
