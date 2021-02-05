@@ -25,6 +25,30 @@ addEventListener('click', function() {
 // Segundo é uma função anônima
 ```
 
+## OPERADORES LÓGICOS && e OPERADORES LÓGICOS ||
+
+### &&
+
+<p> Se ambos os valores forem true ele irá retornar o último valor verificado
+    Se algum valor for false ele irá retornar o mesmo e não irá continuar a verificar os próximos </p>
+```diff
+true && true; // true
+true && false; // false
+'Gato' && 'Cão'; // 'Cão'
+(5 - 5) && (5 + 5); // 0
+'Gato' && false; // false
+```
+### ||
+
+<p>Retorna o primeiro valor true que encontrar</p>
+```diff
+true || true; // true
+true || false; // true
+false || true; // true
+(5 - 5) || (5 + 5); // 10
+'Gato' || false; // Gato
+
+````
 ## Operador rest(...rest)
 
 <p> Usado para atribuir o restante do objeto/array para variável </p>
@@ -38,7 +62,7 @@ const [a, b, ...c] = numeros;
 console.log(a) //1
 console.log(b) //2
 console.log(c) //[3, 4, 5]
-```
+````
 
 ### Objetos:
 
