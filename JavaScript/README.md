@@ -1,3 +1,15 @@
+## Escopo de Bloco
+
+<p> Variáveis criadas com var, vazam o bloco. Por isso com a introdução do ES6 a melhor forma de declarmos uma variável é utilizando const e let, pois estas respeitam o escopo de bloco.</p>
+
+### Let
+
+<p>Mantém o escopo no bloco, impede a redeclaração, mas permite a modificação do valor da variável. </p>
+
+### Const
+
+<p>Mantém o escopo no bloco, impede a redeclaração e impede a modificação do valor da variável, evitando bugs no código. </p>
+
 ## Fuctions
 
 <p> Bloco de código que pode ser executado e reutilizado. </p>
@@ -63,8 +75,6 @@ menu.metadeHeight(); // 25
 ### Métodos
 
 <p>É uma propriedade que possui uma função no local do seu valor. </p>
-
-##
 
 ```diff
 var quadrado = {
