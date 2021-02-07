@@ -1,3 +1,8 @@
+<p align="center">
+  ![Badge](https://img.shields.io/badge/Autor-AndrewSoares-%237159c1?style=for-the-badge&logo=ghost)
+</p>
+
+
 ## Escopo de Bloco
 
 <p> Variáveis criadas com var, vazam o bloco. Por isso com a introdução do ES6 a melhor forma de declarmos uma variável é utilizando const e let, pois estas respeitam o escopo de bloco.</p>
