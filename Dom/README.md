@@ -1,6 +1,5 @@
-<div align="center">
 ![Imagem Site](https://github.com/Andrewsoares15/Estudos-JavaScript/blob/main/Img/js3.jpg)
-</div>
+
 ![Badge](https://img.shields.io/badge/Autor-AndrewSoares-%237159c1?style=for-the-badge&logo=ghost)
 
 ## forEach e Arrow Function
