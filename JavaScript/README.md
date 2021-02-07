@@ -1,7 +1,4 @@
-<p align="center">
-  ![Badge](https://img.shields.io/badge/Autor-AndrewSoares-%237159c1?style=for-the-badge&logo=ghost)
-</p>
-
+![Badge](https://img.shields.io/badge/Autor-AndrewSoares-%237159c1?style=for-the-badge&logo=ghost)
 
 ## Escopo de Bloco
 
