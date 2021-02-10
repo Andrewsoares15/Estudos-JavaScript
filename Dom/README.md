@@ -1,4 +1,47 @@
 ![Badge](https://img.shields.io/badge/Autor-AndrewSoares-%237159c1?style=for-the-badge&logo=ghost)
+## Eventos
+### AddEventListener
+<p> Adiciona uma função ao elemento, esta chamada de callback, que será ativada assim que certo evento ocorrer neste elemento. </p>
+
+```diff
+const link = document.querySelector('a');
+function mouseEntrou(){
+console.log('Entrou com o mouse');
+}
+
+link.addEventListener('mouseEnter', mouseEntrou)
+
+// O terceiro parâmetro é opcional
+```
+### Event e propriedades
+
+```diff
+const link = document.querySelector('a');
+function evento(event) {
+  console.log(this) // retorna o próprio elemento
+  const currentTarget = event.currentTarget; // this
+  const target = event.target; // onde o clique ocorreu
+  const type = event.type; // tipo de evento
+  const path = event.path; //  Localização do local do clique
+  console.log(currentTarget, target, type, path);
+  const prevent = event.preventDefault() // previne a função padrão do evento no browser. No caso, de link interno n deixa ele ser ativado.
+}
+
+link.addEventListener('click', evento);
+```
+### Keyboard
+<p>Você pode adicionar atalhos para facilitar a navegação no seu site, através de eventos do keyboard </p>
+
+```diff
+function handleKeyboard(event) {
+  if(event.key === 'a')
+    document.body.classList.toggle('azul');
+  else if(event.key === 'v')
+    document.body.classList.toggle('vermelho');
+}
+
+window.addEventListener('keydown', callback);
+```
 ## Classes e Atributos
 
 ```diff
