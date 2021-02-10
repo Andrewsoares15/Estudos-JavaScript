@@ -1,8 +1,25 @@
 ![Badge](https://img.shields.io/badge/Autor-AndrewSoares-%237159c1?style=for-the-badge&logo=ghost)
+## Classes e Atributos
+
+```diff
+const link = document.querySelector('a');
+link.className; // string
+link.classList; // lista de classes
+link.classList.add('ativo');
+link.classList.remove('ativo');
+link.classList.toggle('ativo'); // adiciona/remove a classe
+```
+### GetAttribute e SetAttribute
+<p> Métodos que retornam ou definem de acordo com o atributo selecionado </p>
+
+```diff
+const link = document.querySelector('a');
+link.getAttribute('src'); // valor do src
+link.setAttribute('alt', 'Texto Alternativo'); // muda o alt
+
+```
 
 ## forEach e Arrow Function
-
-### forEach
 
 <p>Constantemente vamos selecionar uma lista de itens do dom. A melhor forma para interagirmos com os mesmos é utilizando o método forEach. </p>
 
