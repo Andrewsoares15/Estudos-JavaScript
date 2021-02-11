@@ -1,4 +1,9 @@
 ![Badge](https://img.shields.io/badge/Autor-AndrewSoares-%237159c1?style=for-the-badge&logo=ghost)
+## Travesing e Manipulação
+ ### Travesing
+ <p> Como navegar pelo DOM, utilizando suas propriedades e métodos. </p>
+
+
 ## Eventos
 ### AddEventListener
 <p> Adiciona uma função ao elemento, esta chamada de callback, que será ativada assim que certo evento ocorrer neste elemento. </p>
