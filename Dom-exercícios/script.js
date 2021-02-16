@@ -41,3 +41,33 @@ imgss.forEach(() => {
 
 imgss.forEach(() => i++);
 
+// Adicione a classe ativo a todos os itens do menu
+const todosItem = document.querySelectorAll('.menu a')
+todosItem.forEach((item =>{
+    console.log(item.setAttribute('class', 'ativo'))
+}))
+// Remove a classe ativo de todos os itens do menu e mantenha apenas no primeiro
+todosItem.forEach((item =>{
+    item.classList.remove('ativo')
+    item.removeAttribute('class')
+}))
+// Verifique se as imagens possuem o atributo alt
+imgs.forEach((item =>{
+    console.log(item.hasAttribute('alt') ? 'tem' : 'não tem')
+}))
+// Modifique o href do link externo no menu
+
+const linkext = document.querySelector('a[href^="andre"]')
+linkext.setAttribute('href', 'mama')
+console.log(linkext)
+
+const pa = document.querySelector('a')
+    console.log(pa)
+todosItem.forEach(( item=>{
+    addEventListener('click', () =>{
+        
+        pa.innerHTML = 'clicou'
+    })
+
+}));
+
