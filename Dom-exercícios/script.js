@@ -71,3 +71,46 @@ todosItem.forEach(( item=>{
 
 }));
 
+// Verifique a distância da primeira imagem
+// em relação ao topo da página
+const primeiraImg = document.querySelector('img');
+const distImg = primeiraImg.offsetTop
+console.log(distImg)
+// Retorne a soma da largura de todas as imagens
+function carrega(){
+    const Todas = document.querySelectorAll('img')
+    let soma = 0;
+Todas.forEach((item)=>{
+    soma += item.offsetWidth
+    const larg= item.offsetWidth
+    console.log(larg)
+})
+console.log(soma)
+}
+
+window.onload = function(){
+    carrega()
+}
+// Verifique se os links da página possuem
+// o mínimo recomendado para telas utilizadas
+// com o dedo. (48px/48px de acordo com o google)
+const lik = document.querySelectorAll('a')
+lik.forEach((item)=>{
+const largItem = item.getBoundingClientRect()
+console.log(largItem.width, largItem.height)
+console.log(item.offsetWidth)
+if(largItem.width < 48 || largItem.height < 48){
+    console.log(item, "Não possuem os tamanhos recomendados")
+}else{
+    console.log(item, "Possuem os tamanhos recomendados")
+}
+})
+
+// Se o browser for menor que 720px,
+// adicione a classe menu-mobile ao menu
+const seleMenu = document.querySelector('.menu')
+const largNav = window.matchMedia('(max-width: 720px)')
+if(largNav.matches){
+    seleMenu.classList.add('menu-mobile')
+}
+
