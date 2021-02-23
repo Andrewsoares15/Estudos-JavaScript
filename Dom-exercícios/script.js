@@ -114,3 +114,49 @@ if(largNav.matches){
     seleMenu.classList.add('menu-mobile')
 }
 
+// Quando o usuário clicar nos links internos do site,
+// adicione a classe ativo ao item clicado e remova dos
+// demais itens caso eles possuam a mesma. Previna
+// o comportamento padrão desses links
+const links = document.querySelectorAll('a[href^="#"]')
+
+function clickLink(event){
+    event.preventDefault();
+    links.forEach((item)=>{
+        item.classList.remove('ativo')
+    })
+    console.log(event.target.classList.add('ativo'))
+}
+
+links.forEach((item)=>{
+    item.addEventListener('click', clickLink)
+})
+
+
+// Selecione todos os elementos do site começando a partir do body,
+// ao clique mostre exatamente quais elementos estão sendo clicados
+const todos = document.querySelectorAll('body *')
+
+function todosClick(event){ 
+    console.log(event.currentTarget.remove())
+}
+
+todos.forEach((item) =>{
+    item.addEventListener('click', todosClick)
+})
+
+
+// Utilizando o código anterior, ao invés de mostrar no console,
+// remova o elemento que está sendo clicado, o método remove() remove um elemento
+
+
+// Se o usuário clicar na tecla (t), aumente todo o texto do site. 
+
+const html = document.documentElement
+
+function todosHtml(event){
+    if(event.key === 't'){
+        document.documentElement.classList.toggle('textogrande');
+    }
+}
+window.addEventListener('keydown', todosHtml)
