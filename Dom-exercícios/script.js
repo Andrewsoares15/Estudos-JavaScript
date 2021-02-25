@@ -160,3 +160,19 @@ function todosHtml(event){
     }
 }
 window.addEventListener('keydown', todosHtml)
+
+
+// Duplique o menu e adicione ele em copy
+const menu = document.querySelector('.menu');
+const cloneMenu = menu.cloneNode(true);
+const copy = document.querySelector('.copy')
+copy.appendChild(cloneMenu)
+// Selecione o primeiro DT da dl de Faq
+const faqq = document.querySelector('.faq')
+const dt = faqq.querySelector('dt')
+
+// Selecione o DD referente ao primeiro DT
+const dd = dt.nextElementSibling
+// Substitua o conteúdo html de .faq pelo de .animais
+
+faqq.innerHTML = animais.innerHTML
